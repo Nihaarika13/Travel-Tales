@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     async function fetchItinerary(destination, duration) {
-        const apiKey = 'AIzaSyC5FdOLLPFtyDUq71DOidN8tX9WPqpXHIs';
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
+        const apiKey = 'ENTER_YOUR_API_KEY';
+        const apiUrl = `ENTER_YOUT_API_URL`;
 
         const prompt = `Create a ${duration}-day travel itinerary for ${destination}. For each day, provide a brief description and list 3 activities or attractions to visit. Also, suggest 3 hotels in ${destination}. Format the response as a JSON object with the following structure:
         {
